@@ -18,10 +18,13 @@ if (timer_start)
 		frame_count = 0;
 		total_seconds++;
 		
-		if (total_seconds % 18 = 0 and total_seconds != 180)
+		if (total_seconds % (floor(180/obj_button_category.category_length_round)) = 0 and total_seconds != 180)
 		{
-			obj_button_category.categories_to_draw ++;
-			audio_play_sound(snd_new_category,1, false);
+			if obj_button_category.category_length >= (array_length_1d(obj_button_category.categories_to_draw) + 1)
+			{
+				obj_button_category.categories_to_draw ++;
+				audio_play_sound(snd_new_category,1, false);
+			}
 		}
 	}
 	
@@ -44,11 +47,11 @@ if (timer_start)
 //draw letter generated 
 if (seconds >= 10)
 {
-	draw_text(x, y + 100, string(minutes) + ":" + string(seconds));
+	draw_text(x, y, string(minutes) + ":" + string(seconds));
 }
 else
 {
-	draw_text(x, y + 100, string(minutes) + ":0" + string(seconds));
+	draw_text(x, y, string(minutes) + ":0" + string(seconds));
 }
 draw_set_color(c_white);
 

@@ -91,7 +91,7 @@ category_list[| 88] = "Cooking utensils";
 category_list[| 89] = "Reptiles/Amphibians";
 category_list[| 90] = "Parks";
 category_list[| 91] = "Leisure activities";
-category_list[| 92] = "Things you’re allergic to";
+category_list[| 92] = "Things you're allergic to";
 category_list[| 93] = "Restaurants";
 category_list[| 94] = "Notorious people";
 category_list[| 95] ="Fruits";
@@ -132,6 +132,7 @@ category_list[| 129] = "Things you throw away";
 category_list[| 130] = "Occupations";
 category_list[| 131] = "Appliances";
 category_list[| 132] = "Cartoon characters";
+category_list[| 133] = "Song titles";
 category_list[| 134] = "Types of drinks";
 category_list[| 135] = "Musical groups";
 category_list[| 136] = "Store names";
@@ -154,6 +155,7 @@ category_list[| 150] = "Game terms";
 
 categories_generated[0] = noone;
 categories_to_draw = 1;
-category_length = 10;
+category_length = 14;
+category_length_round = 10;
 
 image_speed = 0;

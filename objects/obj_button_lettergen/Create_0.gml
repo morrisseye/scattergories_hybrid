@@ -25,6 +25,10 @@ letter_button_array[23] = "X";
 letter_button_array[24] = "Y";
 letter_button_array[25] = "Z";
 
+global.categories8 = false;
+global.categories10 = true;
+global.categories12 = false;
+
 letter_generated = "";
 letter_number = 0;
 

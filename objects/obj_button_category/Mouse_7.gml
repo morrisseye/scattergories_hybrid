@@ -2,6 +2,8 @@ var i = 0;
 
 categories_to_draw = 1;
 
+
+
 obj_button_lettergen.letter_number = irandom_range(0, 25);
 
 obj_button_lettergen.letter_generated = obj_button_lettergen.letter_button_array[obj_button_lettergen.letter_number];
@@ -16,11 +18,14 @@ if (obj_button_timer.timer_start)
 	}
 	audio_play_sound(snd_timer_ticking, 1, true);	
 	
+
+	
 	repeat(category_length)
 	{
 		category_random_num = irandom_range(0, ds_list_size(category_list) - 1);
 		categories_generated[i] = category_list[| category_random_num];
 		ds_list_delete(category_list, category_random_num)
+		show_debug_message(categories_generated)
 		i++;
 	}
 
